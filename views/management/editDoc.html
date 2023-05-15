@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../../assets/css/sidebars.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        .kotak1 {
+            border: 1px solid black;
+            height: 450px;
+            background-color: #F3F3F3;
+        }
+
+        .kotak2 {
+            border: 1px solid black;
+            height: 300px;
+            background-color: #D9D9D9;
+        }
+
+        form{
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar1 navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold ms-3" href="#">VYNSIGN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person"></i>
+                            Our Account with Love
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../profile/profile.html">
+                                    <i class="bi bi-person"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Sign Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="d-flex flex-nowrap vh-100">
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 side" style="width: 250px;">
+            <p class="text-muted">Documents</p>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li>
+                    <a href="management.html" class="nav-link active text-dark fw-bold bg-light">
+                        <i class="bi bi-database-down"></i>
+                        Management
+                    </a>
+                </li>
+                <li>
+                    <a href="../concept/concept.html" class="nav-link text-dark fw-semibold">
+                        <i class="bi bi-file-earmark-text"></i>
+                        Concept
+                    </a>
+                </li>
+                <br>
+                <p class="text-muted">Signature</p>
+                <li>
+                    <a href="../draft/draft.html" class="nav-link text-dark fw-semibold">
+                      <i class="bi bi-file-earmark-arrow-down"></i>
+                        Draft
+                    </a>
+                </li>
+                <li>
+                    <a href="../request/pendingReq.html" class="nav-link text-dark fw-semibold">
+                      <i class="bi bi-pencil-square"></i>
+                        Request
+                    </a>
+                </li>
+                <li>
+                    <a href="../sent/sent.html" class="nav-link text-dark fw-semibold">
+                      <i class="bi bi-send"></i>
+                        Sent
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="b-example-divider text-dark">
+            <nav class="navbar navbar2">
+                <div class="container-fluid">
+                    <p class="navbar-brand fw-semibold m-2" href="#">Edit Document</p>
+                </div>
+            </nav>
+
+            <div class="container-fluid w-75 mt-5 kotak1">
+                <div class="kotak2 m-5 mb-4 position-relative">
+                    <form class="m-auto mt-5" action="" method="" id="form-edit-doc">
+                        <ul class="">
+                            <li class="list-group-item">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="floatingInput" name="name"
+                                        placeholder="name">
+                                    <label for="floatingInput">Name Document</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="floatingInput" name="desccription" placeholder="descripption">
+                                    <label for="floatingInput">Description</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="mb-3">
+                                    <input type="file" class="form-control" id="floatingInput" placeholder="sign image"
+                                        name="file">
+                                </div>
+                            </li>
+                          </ul>                
+                    </form>
+                </div>
+                <div class="d-flex justify-content-end  me-5">
+                    <button form="form-edit-doc" class="btn btn-success btn-submit me-3">
+                        Save Changes
+                    </button>
+                    <a href="management.html" class="btn btn-danger">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="../../assets/js/sidebars.js"></script>
+</body>
+
+</html>
